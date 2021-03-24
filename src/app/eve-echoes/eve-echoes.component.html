@@ -1,0 +1,19 @@
+<p *ngIf="raceselected==null" style="margin-bottom: 30%">Please select any items above</p>
+
+<div *ngIf="raceselected">
+    <p>You selected: <strong>{{ raceselected.toUpperCase() }}</strong></p>
+</div>
+
+<div *ngIf="race.description">
+    <br>
+    <p><strong>Description</strong></p>
+    <p>{{ race.description }}</p>
+</div>
+
+<div *ngIf="race.specialties">
+    <br>
+    <p><strong>Specialties</strong></p>
+    <ul>
+        <li *ngFor="let specialty of race.specialties">{{ specialty }}</li>
+    </ul>
+</div>

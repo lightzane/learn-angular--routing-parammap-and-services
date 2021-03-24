@@ -1,0 +1,26 @@
+<h1>Demo: Angular Routing, ParamMap and Services</h1>
+
+<div class="race-selection-section">
+  <button routerLink="/" mat-raised-button color="primary">Home</button>
+  <button [routerLink]="['/eveechoes','amarr']" routerLinkActive="mat-accent accent" mat-raised-button>Amarr</button>
+  <button [routerLink]="['/eveechoes','gallente']" routerLinkActive="mat-accent accent" mat-raised-button>Gallente</button>
+  <button [routerLink]="['/eveechoes','caldari']" routerLinkActive="mat-accent accent" mat-raised-button>Caldari</button>
+  <button [routerLink]="['/eveechoes','minmatar']" routerLinkActive="mat-accent accent" mat-raised-button>Minmatar</button>
+</div>
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+
+
+<footer>
+  <p><strong>References</strong> for Angular Routing</p>
+  <p>Angular Tutorial - 23 - Routing and Navigation<br><a href="https://www.youtube.com/watch?v=Nehk4tBxD4o" target="_blank">https://www.youtube.com/watch?v=Nehk4tBxD4o <mat-icon>launch</mat-icon></a></p>
+  <p>Angular Tutorial - 24 - Wildcard Route and Redirecting Routes<br><a href="https://www.youtube.com/watch?v=QC6wRxXT26I" target="_blank">https://www.youtube.com/watch?v=QC6wRxXT26I <mat-icon>launch</mat-icon></a></p>
+  <p>Angular Tutorial - 25 - Route Parameters<br><a href="https://www.youtube.com/watch?v=qh5nHv-4aw0" target="_blank">https://www.youtube.com/watch?v=qh5nHv-4aw0 <mat-icon>launch</mat-icon></a></p>
+  <p>Angular Tutorial - 26 - paramMap Observable<br><a href="https://www.youtube.com/watch?v=KRV9jZwl0Ig" target="_blank">https://www.youtube.com/watch?v=KRV9jZwl0Ig <mat-icon>launch</mat-icon></a></p>
+  <br>
+  <p><strong>More References</strong> for Angular Services</p>
+  <p>Angular Tutorial - 18 - Dependency Injection<br><a href="https://www.youtube.com/watch?v=OFPIGlxunL0" target="_blank">https://www.youtube.com/watch?v=OFPIGlxunL0 <mat-icon>launch</mat-icon></a></p>
+  <p>Angular Tutorial - 19 - Using a Service<br><a href="https://www.youtube.com/watch?v=69VeYoKzL6I" target="_blank">https://www.youtube.com/watch?v=69VeYoKzL6I <mat-icon>launch</mat-icon></a></p>
+</footer>
